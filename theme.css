@@ -453,3 +453,46 @@ a.log-entry.modern-entry {
 .sleek-scroll::-webkit-scrollbar-thumb:hover {
   background: var(--cyan-dim);
 }
+/* Vault Section */
+.vault-panel {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--magenta);
+  background: rgba(176, 38, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.1);
+  opacity: 1; /* removed animation for simplicity in the live app */
+  backdrop-filter: blur(10px);
+}
+
+.vault-info h3 {
+  margin: 0 0 5px 0;
+  color: var(--magenta);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+}
+
+.vault-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.vault-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #33c759;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #33c759;
+  animation: slowPulse 2s infinite;
+}
