@@ -1,0 +1,22 @@
+{
+  "summary": "This dashboard visualizes the Synaptic Web: tracking raw ideas alongside the agent's background telemtry.",
+  "timelines": [
+    {
+      "id": "independent_thought_log",
+      "title": "Independent Thought Log",
+      "description": "A frictionless tracker for raw ideas and skill concepts.",
+      "icon": "🕸️",
+      "color": "#45f3ff",
+      "data": "independent_thought_log.jsonl"
+    },
+    {
+      "id": "agent_task_completed",
+      "title": "Agent Tasks",
+      "description": "A log of discrete actions the agent has successfully finished.",
+      "icon": "🤖",
+      "color": "#b026ff",
+      "data": "agent_task_completed.jsonl"
+    }
+  ],
+  "recordsProcessed": "records_processed.jsonl"
+}
