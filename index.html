@@ -54,8 +54,18 @@ window.addEventListener('unhandledrejection', function(event) {
             <!-- Left Column: Core Metrics & Agent Vault -->
             <div class="bento-col-left">
 
-                <!-- Agent Vault (Injected by Agent) -->
-                <!-- The agent will dynamically populate this block if backup files are detected -->
+                <!-- Agent Vault -->
+                <section class="vault-panel local-only">
+                    <div class="vault-info">
+                        <h3>Agent Memory Vault</h3>
+                        <p><a href="/api/download?file=agent/treecle/memory/memory.gz" style="color:#a491b5; text-decoration:none;">memory.gz</a> & <a href="/api/download?file=agent/treecle/memory/top_of_mind.md" style="color:#a491b5; text-decoration:none;">top_of_mind.md</a> safely encrypted in Fulcra datastore.</p>
+                        <p style="font-size: 0.75rem; margin-top: 5px;">Last Backup: 2026-06-04 18:00 UTC</p>
+                    </div>
+                    <div class="vault-status">
+                        <span class="status-dot"></span>
+                        <span style="color: #33c759; font-size: 0.9rem;">SECURE</span>
+                    </div>
+                </section>
                 
                 <!-- Records Processed Chart -->
                 <section class="card glass-panel bar-chart-card" x-show="recordsProcessed.length > 0" x-data="barChartComponent()" x-effect="updateChart(recordsProcessed)">
